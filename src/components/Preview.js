@@ -7,6 +7,7 @@ import FormattedDate from 'components/FormattedDate'
 import { default as BaseH2 } from 'components/H2'
 import Link from 'components/Link'
 import Intro from 'components/Intro'
+import Tags from 'components/Tags'
 
 const Container = styled.div `
   margin: 0px;
@@ -29,6 +30,7 @@ const Preview = ({ slug, date, title, intro, tags }) => (
     <Date><FormattedDate date={ date } /></Date>
     <H2><Link to={ slug }>{ title }</Link></H2>
     <Intro>{ intro }</Intro>
+    <Tags tags={ tags } />
   </Container>
 )
 
