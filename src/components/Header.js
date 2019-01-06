@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import IfNotHome from 'components/IfNotHome'
+import Link from 'components/Link'
+
 const Container = styled.header `
   position: sticky;
   top: 0px;
@@ -21,8 +24,13 @@ const Title = styled.span `
   font-weight: bold;
 `
 
+const Back = () => (
+  <Link to="/">Home</Link>
+)
+
 const Header = () => (
   <Container>
+    <IfNotHome component={ Back } />
     <Title>0xc14m1z notes</Title>
   </Container>
 )
