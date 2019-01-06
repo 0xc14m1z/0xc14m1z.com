@@ -3,7 +3,6 @@ import t from 'prop-types'
 import styled from 'styled-components'
 
 import Date from 'components/Date'
-import FormattedDate from 'components/FormattedDate'
 import { default as BaseH2 } from 'components/H2'
 import Link from 'components/Link'
 import Intro from 'components/Intro'
@@ -27,7 +26,7 @@ const H2 = styled(BaseH2) `
 
 const Preview = ({ slug, date, title, intro, tags }) => (
   <Container>
-    <Date><FormattedDate date={ date } /></Date>
+    <Date date={ date } />
     <H2><Link to={ slug }>{ title }</Link></H2>
     <Intro>{ intro }</Intro>
     <Tags tags={ tags } />
