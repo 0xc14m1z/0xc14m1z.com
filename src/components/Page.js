@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import t from 'prop-types'
 import styled from 'styled-components'
 
@@ -13,18 +14,21 @@ const Main = styled.main `
   padding: 0px 20px;
 `
 
-const Page = ({ children }) => (
+const Page = ({ title, description, children }) => (
   <Container>
+    <Helmet
+      defaultTitle="0xc14m1z notes"
+      titleTemplate="%s | 0xc14m1z notes"
+    >
+      <title>{ title }</title>
+      { description && <meta name="description" content={ description } /> }
+    </Helmet>
     <Header />
     <Main>
       { children }
     </Main>
   </Container>
 )
-
-Page.defaultProps = {
-  title: '0xc14m1z notes'
-}
 
 Page.propTypes = {
   title: t.string,
