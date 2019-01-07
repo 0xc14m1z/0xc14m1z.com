@@ -2,11 +2,10 @@ import React from 'react'
 
 import articles from 'articles'
 import Preview from 'components/Preview'
+import Message from 'components/Message'
 
 const EmptyList = () => (
-  <div>
-    No articles here...
-  </div>
+  <Message icon="empty-set" text="no articles here" />
 )
 
 const List = ({ articles }) =>
