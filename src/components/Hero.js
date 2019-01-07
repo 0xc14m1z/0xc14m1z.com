@@ -39,13 +39,14 @@ const H2 = styled(BaseH2) `
   font-size: 1em;
   font-weight: normal;
   color: black;
+  text-align: center;
 `
 
 const Hero = () => (
   <Container>
     <Link to="/about"><Photo src={ photo } alt="Luca Ramundo" /></Link>
     <H1>0xc14m1z notes</H1>
-    <H2>personal blog of Luca Ramundo</H2>
+    <H2>I do note and try lots of things. Wanna avoid to forget them.</H2>
   </Container>
 )
 
