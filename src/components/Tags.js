@@ -15,6 +15,7 @@ const Tag = styled.li `
   background: #EEEEEE;
   color: #888888;
   margin-right: 5px;
+  margin-bottom: 5px;
   border-radius: 5px;
   list-style-type: none;
 `
