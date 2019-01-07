@@ -9,7 +9,7 @@ const Container = styled.header `
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 40px;
+  height: 50px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
