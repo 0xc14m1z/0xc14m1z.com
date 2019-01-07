@@ -10,6 +10,55 @@ const Section = styled.section `
   p {
     margin-top: 0px;
   }
+
+  blockquote {
+    position: relative;
+    margin-left: 2rem;
+    font-family: 'Georgia';
+    font-style: italic;
+    font-size: 1.5em;
+
+    &:before {
+      position: absolute;
+      top: -1rem;
+      left: -3rem;
+      content: '‟';
+      font-size: 3em;
+      color: #930EDF;
+      opacity: 0.25;
+    }
+  }
+
+  pre, code {
+    padding: 5px;
+    border-radius: 5px;
+    background: #EEEEEE;
+  }
+
+  pre {
+    padding: 10px;
+    margin: 0px -10px 10px -10px;
+    overflow-x: auto;
+  }
+
+  pre code {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  hr {
+    border: none;
+    margin: 0px;
+
+    &:after {
+      display: block;
+      margin: 20px 0px;
+      content: "•";
+      color: #DDDDDD;
+      text-align: center;
+    }
+  }
 `
 
 class Content extends PureComponent {
