@@ -1,4 +1,4 @@
-export default [
+const list = [
   {
     slug: '2019/01/02/how-would-i-build-a-micro-version-of-react-part-1',
     date: new Date(2019, 1, 2),
@@ -16,3 +16,10 @@ export default [
     tags: ['javascript', 'how to', 'react']
   }
 ]
+
+export default list
+
+const findArticleBySlug = slug =>
+  (list || []).find(article => article.slug === slug)
+
+export { findArticleBySlug }
