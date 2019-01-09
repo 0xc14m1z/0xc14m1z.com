@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Link from 'components/Link'
-import Icon from 'components/Icon'
+import { HomeIcon, AboutIcon } from 'components/Icon'
 
 const Container = styled.header `
   position: sticky;
@@ -27,11 +27,11 @@ const Title = styled.span `
 `
 
 const Home = () => (
-  <Link to="/"><Icon name="home" /></Link>
+  <Link to="/" title="Home"><HomeIcon /></Link>
 )
 
 const About = () => (
-  <Link to="/about"><Icon name="info-circle" /></Link>
+  <Link to="/about" title="About"><AboutIcon /></Link>
 )
 
 const Header = () => (
