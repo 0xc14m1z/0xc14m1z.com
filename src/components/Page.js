@@ -4,6 +4,7 @@ import t from 'prop-types'
 import styled from 'styled-components'
 
 import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 const Container = styled.div `
   max-width: 768px;
@@ -27,6 +28,7 @@ const Page = ({ title, description, children }) => (
     <Main>
       { children }
     </Main>
+    <Footer />
   </Container>
 )
 
