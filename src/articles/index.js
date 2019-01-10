@@ -18,14 +18,6 @@ const list = [
     tags: ['javascript', 'how to', 'react', 'font awesome']
   },
   {
-    slug: '2018/08/10/building-a-functional-sql-generator-from-plain-old-javascript-objects',
-    date: moment('2018-10-09').toDate(),
-    title: 'Building a functional SQL generator from Plain Old Javascript Objects',
-    intro: 'Is it possible to generate SQL queries from POJOs? Would it be convinient and easy? Let\'s find out.',
-    content: require('./2018/10/building-a-functional-sql-generator-from-plain-old-javascript-objects.md'),
-    tags: ['javascript', 'functional programming', 'sql', 'experiment']
-  },
-  {
     slug: '2018/09/08/building-a-react-paginator-with-a-predefined-number-of-visible-pages',
     date: moment('2018-09-08').toDate(),
     title: 'Building a React paginator with predefined number of visible pages',
