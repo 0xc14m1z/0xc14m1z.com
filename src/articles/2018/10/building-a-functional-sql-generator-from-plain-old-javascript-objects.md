@@ -11,7 +11,7 @@ I am going to build a proof of concept of this idea.
 ### Desired usage
 ### Dialects
 
-## SQL Statements
+## SQL statements ideal "syntax"
 
 - Data Definition Language (DDL)
 - Data Manipulation Language (DML)
