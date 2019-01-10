@@ -11,6 +11,10 @@ const Section = styled.section `
     margin-top: 0px;
   }
 
+  p, li, code {
+    line-height: 1.5;
+  }
+
   blockquote {
     position: relative;
     margin-left: 2rem;
@@ -37,7 +41,7 @@ const Section = styled.section `
 
   pre {
     padding: 10px;
-    margin: 0px -10px 10px -10px;
+    margin: 0px -10px 16px -10px;
     overflow-x: auto;
   }
 
