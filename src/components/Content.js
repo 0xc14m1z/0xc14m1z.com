@@ -15,6 +15,12 @@ const Section = styled.section `
     line-height: 1.5;
   }
 
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 20px 0px;
+  }
+
   blockquote {
     position: relative;
     margin-left: 2rem;
