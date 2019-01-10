@@ -30,18 +30,22 @@ const Text = styled.p `
 const Link = styled(BaseLink) `
   margin-right: 20px;
   margin-bottom: 10px;
+
+  [data-icon] {
+    margin-right: 5px;
+  }
 `
 
 const Footer = () => (
   <Container>
     <Link to="/">
-      <HomeIcon /> Home
+      <HomeIcon />Home
     </Link>
     <Link to="/about">
-      <AboutIcon /> About
+      <AboutIcon />About
     </Link>
     <Link to="https://github.com/0xc14m1z">
-      <GitHubIcon /> GitHub
+      <GitHubIcon />GitHub
     </Link>
     <Text>© { new Date().getFullYear() }. All rights reserved.</Text>
   </Container>

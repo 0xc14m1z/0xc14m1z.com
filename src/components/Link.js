@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link as BaseLink } from 'react-router-dom'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-const Link = styled(BaseLink) `
+const style = css `
   color: #930EDF;
   text-decoration: none;
 
@@ -10,5 +10,16 @@ const Link = styled(BaseLink) `
     text-decoration: underline;
   }
 `
+
+const StyledA = styled.a(style)
+const StyledLink = styled(BaseLink)(style)
+
+const isExternal = url =>
+  url.startsWith('http')
+
+const Link = ({ to, ...props }) =>
+  isExternal(to)
+    ? <StyledA href={ to } { ...props } />
+    : <StyledLink to={ to } { ...props } />
 
 export default React.memo(Link)
