@@ -5,6 +5,7 @@ import Link from 'components/Link'
 import { HomeIcon, AboutIcon } from 'components/Icon'
 
 const Container = styled.header `
+  z-index: 1;
   position: sticky;
   top: 0px;
   left: 0px;
