@@ -69,6 +69,15 @@ const Section = styled.section `
       text-align: center;
     }
   }
+
+  a {
+    color: #930EDF;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 class Content extends PureComponent {
