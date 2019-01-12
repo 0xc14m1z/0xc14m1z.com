@@ -7,7 +7,8 @@ const list = [
     title: 'Building a micro version of React from scratch',
     intro: 'The first of a series of articles in which I try to build a small version of React, trying to understand how it may work.',
     content: require('./2019/01/building-a-micro-version-of-react-from-scratch.md'),
-    tags: ['javascript', 'how to', 'react', 'experiment']
+    tags: ['javascript', 'how to', 'react', 'experiment'],
+    isWorkInProgress: true
   },
   {
     slug: '2018/12/13/how-to-use-font-awesome-pro-with-react',

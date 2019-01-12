@@ -3,6 +3,7 @@ import t from 'prop-types'
 import styled from 'styled-components'
 
 import Date from 'components/Date'
+import { default as BaseWIP } from 'components/WorkInProgressBadge'
 import { default as BaseH2 } from 'components/H2'
 import Link from 'components/Link'
 import Intro from 'components/Intro'
@@ -20,13 +21,19 @@ const Container = styled.div `
   }
 `
 
+const WIP = styled(BaseWIP) `
+  margin-top: 10px;
+  & + h2 { margin-top: 5px; }
+`
+
 const H2 = styled(BaseH2) `
   margin: 10px 0px;
 `
 
-const Preview = ({ slug, date, title, intro, tags }) => (
+const Preview = ({ slug, date, title, intro, tags, isWorkInProgress }) => (
   <Container>
     <Date date={ date } />
+    { isWorkInProgress && <WIP /> }
     <H2><Link to={ slug }>{ title }</Link></H2>
     <Intro>{ intro }</Intro>
     <Tags tags={ tags } />
