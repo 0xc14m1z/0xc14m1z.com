@@ -6,6 +6,7 @@ import { default as BaseWIP } from 'components/WorkInProgressBadge'
 import H1 from 'components/H1'
 import Tags from 'components/Tags'
 import Content from 'components/Content'
+import WorkInProgressBanner from 'components/WorkInProgressBanner'
 
 const Container = styled.article ``
 
@@ -21,6 +22,7 @@ const Article = ({ date, title, content, tags, isWorkInProgress }) => (
     <H1>{ title }</H1>
     <Tags tags={ tags } />
     <Content url={ content } />
+    { isWorkInProgress && <WorkInProgressBanner /> }
   </Container>
 )
 
