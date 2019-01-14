@@ -4,3 +4,143 @@ html, body {
 
   font-family: 'Nunito', sans-serif;
 }
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+  padding: 5px;
+  border-radius: 5px;
+  background: #282C34;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  font-feature-settings: normal;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 10px;
+  margin: 0px -10px 16px -10px;
+  overflow-x: auto;
+}
+
+pre[class*="language-"] code[class*="language-"] {
+ background: none;
+ padding: 0px;
+ margin: 0px;
+}
+
+pre[class*="language-"]::-moz-selection {
+  /* Firefox */
+  background: hsl(207, 4%, 16%);
+}
+
+pre[class*="language-"]::selection {
+  /* Safari */
+  background: hsl(207, 4%, 16%);
+}
+
+/* Text Selection colour */
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  border-radius: .3em;
+  background: rgba(255,229,100,0.2);
+  color: #1a1a1a;
+  padding: .15em .2em .05em;
+  white-space: normal;
+}
+
+.token.attr-name {
+  color: rgb(197, 165, 197);
+  font-style: italic;
+}
+
+.token.comment {
+  color: rgb(99, 119, 119);
+}
+
+.token.string,
+.token.url {
+  color: rgb(173, 219, 103);
+}
+
+.token.variable {
+  color: rgb(214, 222, 235);
+}
+
+.token.number {
+  color: rgb(90, 155, 207);
+}
+
+.token.builtin,
+.token.char,
+.token.constant,
+.token.function {
+  color: rgb(121, 182, 242);
+}
+
+.token.punctuation {
+  color: rgb(136, 198, 190);
+}
+
+.token.selector,
+.token.doctype {
+  color: rgb(199, 146, 234);
+  font-style: 'italic';
+}
+
+.token.class-name {
+  color: rgb(250, 200, 99);
+}
+
+.token.tag,
+.token.keyword {
+  color: rgb(252, 146, 158);
+}
+
+.token.operator {
+  color: rgb(215, 222, 234);
+}
+
+.token.boolean {
+  color: rgb(255, 88, 116);
+}
+
+.token.property {
+  color: rgb(128, 203, 196);
+}
+
+.token.namespace {
+  color: rgb(178, 204, 214);
+}
+
+pre[data-line] {
+  padding: 1em 0 1em 3em;
+  position: relative;
+}

@@ -1,18 +1,18 @@
 You may have noticed that after declaring an integers array like this:
 
-```
+```js
 const array = [2, 6, 1, 3, 8, 10, 2, 7, 4, 9]
 ```
 
 if you try to sort it using the `sort()` method, you don’t get the expected result of:
 
-```
+```js
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 but instead this:
 
-```
+```js
 [1, 10, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
@@ -37,13 +37,13 @@ We can achieve all three possible results with a single operation. The arithmeti
 
 Using a ES6 lambda function, the compare function could be this easy:
 
-```
+```js
 const cmp = (fst, snd) => fst - snd
 ```
 
 So, in the end, an array of integers should be sort using a custom compare function:
 
-```
+```js
 const array = [2, 6, 1, 3, 8, 10, 2, 7, 4, 9]
 const cmp = (fst, snd) => fst - snd
 const sorted = array.splice().sort(cmp)

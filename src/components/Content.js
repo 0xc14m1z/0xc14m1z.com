@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import Markdown from 'react-markdown'
 import styled from 'styled-components'
+import Prism from 'prismjs'
+import 'prismjs/components/prism-jsx.min'
 
 import Spinner from 'components/Spinner'
 
@@ -39,24 +41,6 @@ const Section = styled.section `
     }
   }
 
-  pre, code {
-    padding: 5px;
-    border-radius: 5px;
-    background: #EEEEEE;
-  }
-
-  pre {
-    padding: 10px;
-    margin: 0px -10px 16px -10px;
-    overflow-x: auto;
-  }
-
-  pre code {
-    background: none;
-    padding: 0px;
-    margin: 0px;
-  }
-
   hr {
     border: none;
     margin: 0px;
@@ -90,7 +74,11 @@ class Content extends PureComponent {
   componentDidMount() {
     fetch(this.props.url)
       .then(response => response.text())
-      .then(response => this.setState({ content: response, error: false }))
+      .then(response => {
+        this.setState({ content: response, error: false }, () => {
+          Prism.highlightAll()
+        })
+      })
       .catch(error => this.setState({ content: null, error: true }))
   }
 

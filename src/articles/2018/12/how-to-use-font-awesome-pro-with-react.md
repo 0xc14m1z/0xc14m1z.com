@@ -88,7 +88,7 @@ library.add(
 
 The `FontAwesomeIcon` component exported from the `@fortawesome/react-fontawesome` allows the user to use icons in few ways:
 
-```js
+```jsx
 <FontAwesomeIcon icon="home" />
 <FontAwesomeIcon icon={ faHome } />
 <FontAwesomeIcon icon={['fal', 'home']} />
@@ -100,7 +100,7 @@ The thing I feel missing, only from the point of view of my projects, is that it
 
 For this reason, I like to have a wrapper component alongside the library definition that adds this warning to the user using the `prop-types` package.
 
-```js
+```jsx
 import React from 'react'
 import t from 'prop-types'
 import { library } from '@fortawesome/fontawesome-svg-core'

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 import './index.css'
 import 'typeface-nunito'
+import 'typeface-source-code-pro'
 
 import App from './App'
 import * as serviceWorker from './serviceWorker'
