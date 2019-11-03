@@ -2,7 +2,7 @@ import React from 'react'
 import t from 'prop-types'
 import styled from 'styled-components'
 
-import { Date, H2 as BaseH2, Link, Tags } from 'ui'
+import { H2 as BaseH2, Link, Tags } from 'ui'
 import { Intro } from 'components'
 import WorkInProgressBadge from '../WorkInProgressBadge'
 
@@ -27,9 +27,8 @@ const H2 = styled(BaseH2) `
   margin: 10px 0px;
 `
 
-const Preview = ({ slug, date, title, intro, tags, isWorkInProgress }) => (
+const Preview = ({ slug, title, intro, tags, isWorkInProgress }) => (
   <Container>
-    <Date date={ date } />
     { isWorkInProgress && <WIP /> }
     <H2><Link to={ slug }>{ title }</Link></H2>
     <Intro>{ intro }</Intro>
@@ -39,7 +38,6 @@ const Preview = ({ slug, date, title, intro, tags, isWorkInProgress }) => (
 
 Preview.propTypes = {
   slug: t.string.isRequired,
-  date: t.object.isRequired,
   title: t.string.isRequired,
   intro: t.string.isRequired,
   tags: t.arrayOf(String)
