@@ -5,10 +5,10 @@ import './index.css'
 import 'typeface-nunito'
 import 'typeface-source-code-pro'
 
-import App from './App'
+import Application from './Application'
 import * as serviceWorker from './serviceWorker'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Application />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

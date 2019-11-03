@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import * as Pages from 'pages'
 
-const App = () => (
+const Application = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={ Pages.HomePage } />
@@ -18,4 +18,4 @@ const App = () => (
   </Router>
 )
 
-export default React.memo(App)
+export default Application
