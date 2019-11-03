@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Page from 'components/Page'
-import H1 from 'components/H1'
+import { Page, H1 } from 'ui'
 
 const AboutPage = () => (
   <Page title="About me">
@@ -22,4 +21,4 @@ const AboutPage = () => (
   </Page>
 )
 
-export default React.memo(AboutPage)
+export default AboutPage

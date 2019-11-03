@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Link from 'components/Link'
-import { HomeIcon, AboutIcon } from 'components/Icon'
+import Link from './Link'
+import { HomeIcon, AboutIcon } from './Icon'
 
 const Container = styled.header `
   z-index: 1;

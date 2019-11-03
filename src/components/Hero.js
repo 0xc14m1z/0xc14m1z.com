@@ -3,9 +3,7 @@ import styled from 'styled-components'
 
 import photo from 'assets/images/photo.jpg'
 
-import Link from 'components/Link'
-import BaseH1 from 'components/H1'
-import BaseH2 from 'components/H2'
+import { H1 as BaseH1, H2 as BaseH2, Link } from 'ui'
 
 const Container = styled.div `
   margin-top: 50px;
@@ -50,4 +48,4 @@ const Hero = () => (
   </Container>
 )
 
-export default React.memo(Hero)
+export default Hero

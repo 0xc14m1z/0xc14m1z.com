@@ -20,4 +20,4 @@ const WorkInProgressBanner = () => (
   </Container>
 )
 
-export default React.memo(WorkInProgressBanner)
+export default WorkInProgressBanner

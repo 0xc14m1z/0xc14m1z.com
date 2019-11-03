@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Date from 'components/Date'
-import { default as BaseWIP } from 'components/WorkInProgressBadge'
-import H1 from 'components/H1'
-import Tags from 'components/Tags'
-import Content from 'components/Content'
-import WorkInProgressBanner from 'components/WorkInProgressBanner'
+import { Date, H1, Tags } from 'ui'
+import WorkInProgressBadge from '../WorkInProgressBadge'
+
+import Content from './Content'
+import WorkInProgressBanner from './WorkInProgressBanner'
 
 const Container = styled.article ``
 
-const WIP = styled(BaseWIP) `
+const WIP = styled(WorkInProgressBadge) `
   margin-top: 25px;
   & + h1 { margin-top: 5px; }
 `
@@ -26,4 +25,4 @@ const Article = ({ date, title, content, tags, isWorkInProgress }) => (
   </Container>
 )
 
-export default React.memo(Article)
+export default Article

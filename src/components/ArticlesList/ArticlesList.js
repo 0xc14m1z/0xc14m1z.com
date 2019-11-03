@@ -1,8 +1,8 @@
 import React from 'react'
 
 import articles from 'articles'
-import Preview from 'components/Preview'
-import Message from 'components/Message'
+import { Message } from 'ui'
+import Preview from './Preview'
 
 const EmptyList = () => (
   <Message icon="empty-set" text="no articles here" />
@@ -21,4 +21,4 @@ const ArticlesList = () =>
     ? <EmptyList />
     : <List articles={ articles } />
 
-export default React.memo(ArticlesList)
+export default ArticlesList

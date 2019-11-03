@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Prism from 'prismjs'
 import 'prismjs/components/prism-jsx.min'
 
-import Spinner from 'components/Spinner'
+import { Spinner } from 'ui'
 
 const Section = styled.section `
   margin-top: 30px;

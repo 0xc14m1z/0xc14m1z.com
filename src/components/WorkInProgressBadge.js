@@ -17,4 +17,4 @@ const WorkInProgressBadge = ({ className }) => (
   </Container>
 )
 
-export default React.memo(WorkInProgressBadge)
+export default WorkInProgressBadge

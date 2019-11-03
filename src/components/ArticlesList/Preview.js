@@ -2,12 +2,9 @@ import React from 'react'
 import t from 'prop-types'
 import styled from 'styled-components'
 
-import Date from 'components/Date'
-import { default as BaseWIP } from 'components/WorkInProgressBadge'
-import { default as BaseH2 } from 'components/H2'
-import Link from 'components/Link'
-import Intro from 'components/Intro'
-import Tags from 'components/Tags'
+import { Date, H2 as BaseH2, Link, Tags } from 'ui'
+import { Intro } from 'components'
+import WorkInProgressBadge from '../WorkInProgressBadge'
 
 const Container = styled.div `
   margin: 0px;
@@ -21,7 +18,7 @@ const Container = styled.div `
   }
 `
 
-const WIP = styled(BaseWIP) `
+const WIP = styled(WorkInProgressBadge) `
   margin-top: 10px;
   & + h2 { margin-top: 5px; }
 `
@@ -48,4 +45,4 @@ Preview.propTypes = {
   tags: t.arrayOf(String)
 }
 
-export default React.memo(Preview)
+export default Preview

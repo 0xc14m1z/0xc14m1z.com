@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import FormattedDate from 'components/FormattedDate'
+import FormattedDate from './FormattedDate'
 
 const Container = styled.p `
   margin: 0px;
@@ -15,4 +15,4 @@ const Date = ({ date }) => (
   </Container>
 )
 
-export default React.memo(Date)
+export default Date

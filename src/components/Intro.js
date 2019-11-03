@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const Intro = styled.p `
@@ -7,4 +6,4 @@ const Intro = styled.p `
   font-size: 1.15em;
 `
 
-export default React.memo(Intro)
+export default Intro

@@ -3,8 +3,8 @@ import React from 'react'
 import { findArticleBySlug } from 'articles'
 
 import NotFoundPage from 'pages/NotFoundPage'
-import Page from 'components/Page'
-import Article from 'components/Article'
+import { Page } from 'ui'
+import { Article } from 'components'
 
 const ArticlePage = ({ match: { params: { slug } } }) => {
   const article = findArticleBySlug(slug)
@@ -20,4 +20,4 @@ const ArticlePage = ({ match: { params: { slug } } }) => {
   )
 }
 
-export default React.memo(ArticlePage)
+export default ArticlePage

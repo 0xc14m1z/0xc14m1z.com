@@ -26,7 +26,7 @@ const Icon = ({ name, ...props }) => (
   <FontAwesomeIcon icon={ name } { ...props } />
 )
 
-export default React.memo(Icon)
+export default Icon
 
 export const HomeIcon = props =>
   <Icon name={[ 'fal', 'home' ]} { ...props } />

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import BaseIcon from 'components/Icon'
+import BaseIcon from './Icon'
 
 const Container = styled.div `
   display: flex;
@@ -27,4 +27,4 @@ const Message = ({ icon, text, ...props }) => (
   </Container>
 )
 
-export default React.memo(Message)
+export default Message

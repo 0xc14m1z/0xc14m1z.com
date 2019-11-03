@@ -1,4 +1,3 @@
-import React from 'react'
 import moment from 'moment'
 import t from 'prop-types'
 
@@ -13,4 +12,4 @@ FormattedDate.propTypes = {
   date: t.instanceOf(Date).isRequired
 }
 
-export default React.memo(FormattedDate)
+export default FormattedDate

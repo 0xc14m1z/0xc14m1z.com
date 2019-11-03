@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import BaseLink from 'components/Link'
-import { HomeIcon, AboutIcon, GitHubIcon } from 'components/Icon'
+import BaseLink from './Link'
+import { HomeIcon, AboutIcon, GitHubIcon } from './Icon'
 
 const Container = styled.footer `
   margin-top: 50px;
@@ -51,4 +51,4 @@ const Footer = () => (
   </Container>
 )
 
-export default React.memo(Footer)
+export default Footer

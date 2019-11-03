@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const H1 = styled.h1 `
@@ -6,4 +5,4 @@ const H1 = styled.h1 `
   font-size: 2em;
 `
 
-export default React.memo(H1)
+export default H1

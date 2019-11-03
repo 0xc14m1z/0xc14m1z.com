@@ -1,8 +1,7 @@
 import React from 'react'
 
-import Page from 'components/Page'
-import Hero from 'components/Hero'
-import ArticlesList from 'components/ArticlesList'
+import { Page } from 'ui'
+import { ArticlesList, Hero } from 'components'
 
 const HomePage = () => (
   <Page title="Home">
@@ -11,4 +10,4 @@ const HomePage = () => (
   </Page>
 )
 
-export default React.memo(HomePage)
+export default HomePage

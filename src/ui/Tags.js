@@ -35,4 +35,4 @@ Tags.propTypes = {
   tags: t.arrayOf(String)
 }
 
-export default React.memo(Tags)
+export default Tags

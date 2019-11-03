@@ -22,4 +22,4 @@ const Link = ({ to, ...props }) =>
     ? <StyledA href={ to } { ...props } />
     : <StyledLink to={ to } { ...props } />
 
-export default React.memo(Link)
+export default Link
