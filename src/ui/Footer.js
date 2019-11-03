@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import BaseLink from './Link'
-import { HomeIcon, AboutIcon, GitHubIcon } from './Icon'
+import { HomeIcon, InfoIcon, GitHubIcon } from './Icon'
 
 const Container = styled.footer `
   margin-top: 50px;
@@ -41,8 +41,8 @@ const Footer = () => (
     <Link to="/">
       <HomeIcon />Home
     </Link>
-    <Link to="/about">
-      <AboutIcon />About
+    <Link to="/resume">
+      <InfoIcon />Résumé
     </Link>
     <Link to="https://github.com/0xc14m1z">
       <GitHubIcon />GitHub

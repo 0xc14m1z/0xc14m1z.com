@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import photo from 'assets/images/photo.jpg'
 
 import { H1 as BaseH1, H2 as BaseH2, Link } from 'ui'
+import { InfoIcon } from 'ui/Icon'
 
 const Container = styled.div `
   margin-top: 50px;
@@ -23,17 +24,18 @@ const Container = styled.div `
 const Photo = styled.img `
   width: 72px;
   height: 72px;
-  border-radius: 1000px;
+  border-radius: 72px;
   margin-bottom: 20px;
 `
 
 const H1 = styled(BaseH1) `
   margin: 0px;
-  font-size: 1em;
+  font-size: 1.25em;
 `
 
 const H2 = styled(BaseH2) `
-  margin: 0px;
+  margin: 10px 0px;
+  max-width: 400px;
   font-size: 1em;
   font-weight: normal;
   color: black;
@@ -42,9 +44,17 @@ const H2 = styled(BaseH2) `
 
 const Hero = () => (
   <Container>
-    <Link to="/about"><Photo src={ photo } alt="Luca Ramundo" /></Link>
-    <H1>0xc14m1z notes</H1>
-    <H2>I do note and try lots of things. Wanna avoid to forget them.</H2>
+    <Link to="/resume">
+      <Photo src={ photo } alt="Luca Ramundo" />
+    </Link>
+    <H1>Luca Ramundo</H1>
+    <H2>
+      I'm an experienced Frontend Developer with more than ten years of full
+      stack projects behind me as a freelance.
+    </H2>
+    <Link to="/resume">
+      <InfoIcon /> Résumé
+    </Link>
   </Container>
 )
 

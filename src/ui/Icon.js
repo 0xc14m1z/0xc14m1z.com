@@ -31,7 +31,7 @@ export default Icon
 export const HomeIcon = props =>
   <Icon name={[ 'fal', 'home' ]} { ...props } />
 
-export const AboutIcon = props =>
+export const InfoIcon = props =>
   <Icon name={[ 'fal', 'info-circle' ]} { ...props } />
 
 export const GitHubIcon = props =>

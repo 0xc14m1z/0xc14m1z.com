@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Link from './Link'
-import { HomeIcon, AboutIcon } from './Icon'
+import { HomeIcon, InfoIcon } from './Icon'
 
 const Container = styled.header `
   z-index: 1;
@@ -28,19 +28,23 @@ const Title = styled.span `
 `
 
 const Home = () => (
-  <Link to="/" title="Home"><HomeIcon /></Link>
+  <Link to="/" title="Home">
+    <HomeIcon />
+  </Link>
 )
 
-const About = () => (
-  <Link to="/about" title="About"><AboutIcon /></Link>
+const Resume = () => (
+  <Link to="/resume" title="Résumé">
+    <InfoIcon />
+  </Link>
 )
 
 const Header = () => (
   <Container>
     <Home />
-    <Title>0xc14m1z notes</Title>
-    <About />
+    <Title>0xc14m1z</Title>
+    <Resume />
   </Container>
 )
 
-export default React.memo(Header)
+export default Header
