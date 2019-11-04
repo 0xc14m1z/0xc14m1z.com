@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import photo from 'assets/images/photo.jpg'
 
-import { H1 as BaseH1, H2 as BaseH2, Link } from 'ui'
+import { H1 as BaseH1, H2 as BaseH2, Link as BaseLink } from 'ui'
 import { InfoIcon } from 'ui/Icon'
 
 const Container = styled.div `
@@ -42,6 +42,12 @@ const H2 = styled(BaseH2) `
   text-align: center;
 `
 
+const Link = styled(BaseLink) `
+  [data-icon] {
+    margin-right: 5px;
+  }
+`
+
 const Hero = () => (
   <Container>
     <Link to="/resume">
@@ -53,7 +59,7 @@ const Hero = () => (
       stack projects behind me as a freelance.
     </H2>
     <Link to="/resume">
-      <InfoIcon /> Résumé
+      <InfoIcon />Résumé
     </Link>
   </Container>
 )
