@@ -3,7 +3,6 @@ import t from 'prop-types'
 import styled from 'styled-components'
 
 import { H2 as BaseH2, Link, Tags } from 'ui'
-import { Intro } from 'components'
 import WorkInProgressBadge from '../WorkInProgressBadge'
 
 const Container = styled.div `
@@ -25,6 +24,12 @@ const WIP = styled(WorkInProgressBadge) `
 
 const H2 = styled(BaseH2) `
   margin: 10px 0px;
+`
+
+const Intro = styled.p `
+  margin: 0px 0px 10px 0px;
+  color: black;
+  font-size: 1.15em;
 `
 
 const Preview = ({ slug, title, intro, tags, isWorkInProgress }) => (
