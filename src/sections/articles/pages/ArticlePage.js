@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import { NotFoundPage } from 'sections/generic/pages'
 import { Page } from 'ui'
 import { Article } from 'sections/articles/components'

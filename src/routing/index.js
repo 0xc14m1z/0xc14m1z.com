@@ -1,6 +1,9 @@
+import { lazy } from 'react'
+
 import * as Paths from './paths'
 import * as Pages from './pages'
-import Router from './Router'
+
+const Router = lazy(() => import('./Router'))
 
 export {
   Paths,
