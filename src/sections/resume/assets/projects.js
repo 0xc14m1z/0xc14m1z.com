@@ -1,5 +1,6 @@
 const projects = [
   {
+    slug: 'projects/cerved',
     period: '2019',
     role: 'Frontend developer',
     client: {
@@ -14,6 +15,7 @@ const projects = [
     tags: ['javascript', 'react', 'redux', 'redux-saga']
   },
   {
+    slug: 'projects/operaclick',
     period: '2018 / 2019',
     role: 'Fullstack developer',
     client: {
@@ -29,6 +31,7 @@ const projects = [
     tags: ['javascript', 'react', 'redux', 'redux-saga', 'styled-components', 'storybook', 'ruby on rails', 'aws']
   },
   {
+    slug: 'projects/cndcec',
     period: '2018',
     role: 'Frontend developer',
     client: {
@@ -44,6 +47,7 @@ const projects = [
     tags: ['javascript', 'react', 'redux', 'redux-thunk', 'blueprint js']
   },
   {
+    slug: 'projects/flowtech',
     period: '2018',
     role: 'Frontend developer',
     client: {
@@ -58,6 +62,7 @@ const projects = [
     tags: ['javascript', 'react', 'webrtc', 'nodejs']
   },
   {
+    slug: 'projects/repower',
     period: '2018',
     role: 'Frontend mentor and consultant developer',
     client: {
@@ -72,6 +77,7 @@ const projects = [
     tags: ['javascript', 'react', 'redux', 'redux-thunk']
   },
   {
+    slug: 'projects/tennistalker',
     period: '2017',
     role: 'Frontend developer',
     client: {
@@ -86,6 +92,7 @@ const projects = [
     tags: ['javascript', 'react', 'redux', 'redux-thunk']
   },
   {
+    slug: 'projects/odcecmb',
     period: '2016 / 2017',
     role: 'Frontend developer',
     client: {
@@ -101,6 +108,7 @@ const projects = [
     tags: ['javascript', 'react']
   },
   {
+    slug: 'projects/snpt',
     period: '2015 / 2016',
     role: 'Fullstack developer',
     client: {

@@ -6,7 +6,7 @@ import Preview from './Preview'
 import { projects } from 'sections/resume/assets'
 
 const EmptyList = () => (
-  <Message icon="empty-set" text="no projects here" />
+  <Message icon={ ['fal', 'empty-set'] } text="no projects here" />
 )
 
 const List = ({ projects }) =>

@@ -2,7 +2,7 @@ import React from 'react'
 import t from 'prop-types'
 import styled from 'styled-components'
 
-import { H2 as BaseH2, Link, Tags } from 'ui'
+import { Tags } from 'ui'
 
 const Container = styled.div `
   margin: 0px;
@@ -16,18 +16,12 @@ const Container = styled.div `
   }
 `
 
-const Period = styled.span `
-  font-weight: bold;
-`
+const Period = styled.span ``
 
 const Status = styled.span `
+  margin-left: 10px;
+  display: inline-block;
   color: #888888;
-  &:before {
-    margin-left: 10px;
-    margin-right: 10px;
-    content: "•";
-    color: #DDDDDD;
-  }
 `
 
 const PrivateApplication = styled.span.attrs({ children: 'private application' }) `
@@ -37,8 +31,12 @@ const PrivateApplication = styled.span.attrs({ children: 'private application' }
   }
 `
 
+const Role = styled.h3 `
+  margin: 5px 0px;
+`
+
 const ClientName = styled.p `
-  font-size: 0.85em;
+  margin-top: 0px;
 `
 
 const ClientDescription = styled.p `
@@ -46,7 +44,7 @@ const ClientDescription = styled.p `
 `
 
 const Description = ({ lines }) =>
-  lines.map(line => <p>{ line }</p>)
+  lines.map((line, index) => <p key={ index }>{ line }</p>)
 
 const Preview = ({
   slug,
@@ -59,12 +57,10 @@ const Preview = ({
   tags
 }) => (
   <Container>
-    <p>
-      <Period>{ period }</Period>
-      { status && <Status>{ status }</Status> }
-      { isPrivate && <PrivateApplication /> }
-    </p>
-    <h3>{ role }</h3>
+    <Period>{ period }</Period>
+    { status && <Status>{ status }</Status> }
+    { isPrivate && <PrivateApplication /> }
+    <Role>{ role }</Role>
     <ClientName>{ client.name }</ClientName>
     <ClientDescription>{ client.description }</ClientDescription>
     <Description lines={ description } />
@@ -72,11 +68,18 @@ const Preview = ({
   </Container>
 )
 
-// Preview.propTypes = {
-//   slug: t.string.isRequired,
-//   title: t.string.isRequired,
-//   intro: t.string.isRequired,
-//   tags: t.arrayOf(String)
-// }
+Preview.propTypes = {
+  slug: t.string.isRequired,
+  period: t.string.isRequired,
+  status: t.string,
+  isPrivate:   t.bool.isRequired,
+  role: t.string.isRequired,
+  client: t.shape({
+    name: t.string.isRequired,
+    description: t.string.isRequired
+  }),
+  description: t.arrayOf(t.string),
+  tags: t.arrayOf(t.string)
+}
 
 export default Preview

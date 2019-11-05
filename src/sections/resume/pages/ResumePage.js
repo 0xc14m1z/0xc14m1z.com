@@ -1,7 +1,12 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import { Page, H1 } from 'ui'
+import { Page, H1, H2 as BaseH2 } from 'ui'
 import { ProjectsList } from 'sections/resume/components'
+
+const H2 = styled(BaseH2) `
+  margin-top: 50px;
+`
 
 const ResumePage = () => (
   <Page title="Résumé">
@@ -28,7 +33,7 @@ const ResumePage = () => (
       frontend and Elixir for the backend.
     </p>
 
-    <h2>Latest projects</h2>
+    <H2>Latest projects</H2>
 
     <ProjectsList />
 
