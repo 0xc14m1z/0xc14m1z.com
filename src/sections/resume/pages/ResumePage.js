@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Page, H1 } from 'ui'
+import { ProjectsList } from 'sections/resume/components'
 
 const ResumePage = () => (
   <Page title="Résumé">
@@ -26,6 +27,10 @@ const ResumePage = () => (
       Typescript and studying functional programming languages like Elm for the
       frontend and Elixir for the backend.
     </p>
+
+    <h2>Latest projects</h2>
+
+    <ProjectsList />
 
   </Page>
 )
