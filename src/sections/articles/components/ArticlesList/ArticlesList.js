@@ -1,8 +1,9 @@
 import React from 'react'
 
-import articles from 'articles'
 import { Message } from 'ui'
 import Preview from './Preview'
+
+import { articles } from 'sections/articles/assets'
 
 const EmptyList = () => (
   <Message icon="empty-set" text="no articles here" />

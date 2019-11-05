@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { Page } from 'ui'
-import { ArticlesList, Hero } from 'components'
+import { Hero } from 'sections/home/components'
+import { ArticlesList } from 'sections/articles/components'
 
 const HomePage = () => (
   <Page title="Home">

@@ -1,13 +1,15 @@
 import React from 'react'
 
-import { findArticleBySlug } from 'articles'
 
-import NotFoundPage from 'pages/NotFoundPage'
+import { NotFoundPage } from 'sections/generic/pages'
 import { Page } from 'ui'
-import { Article } from 'components'
+import { Article } from 'sections/articles/components'
+
+import { articles } from 'sections/articles/assets'
+import { findArticleBySlug } from 'sections/articles/helpers'
 
 const ArticlePage = ({ match: { params: { slug } } }) => {
-  const article = findArticleBySlug(slug)
+  const article = findArticleBySlug(articles, slug)
   if ( !article ) return <NotFoundPage />
 
   return (

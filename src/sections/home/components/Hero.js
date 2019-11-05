@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import photo from 'assets/images/photo.jpg'
+import photo from 'sections/home/assets/images/photo.jpg'
 
 import { H1 as BaseH1, H2 as BaseH2, Link as BaseLink } from 'ui'
 import { InfoIcon } from 'ui/Icon'
