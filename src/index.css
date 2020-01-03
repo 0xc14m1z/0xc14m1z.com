@@ -1,5 +1,6 @@
 code[class*="language-"],
 pre[class*="language-"],
+code,
 pre {
   padding: 5px;
   border-radius: 5px;

@@ -62,6 +62,10 @@ const Section = styled.section `
       text-decoration: underline;
     }
   }
+
+  h3 {
+    margin-top: 30px;
+  }
 `
 
 class Content extends PureComponent {
